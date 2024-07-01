@@ -129,10 +129,10 @@ class _ProductFormScreenState extends State<ProductFormScreen> {
                       // Tambah product baru
                       response = await productApi.createProduct(
                         _namaController.text,
-                        double.parse(_priceController.text),
-                        double.parse(_qtyController.text),
+                        int.parse(_priceController.text),
+                        int.parse(_qtyController.text),
                         _attrController.text,
-                        double.parse(_weightController.text),
+                        int.parse(_weightController.text),
                       );
                     } else {
                       // Update product yang ada
@@ -140,10 +140,10 @@ class _ProductFormScreenState extends State<ProductFormScreen> {
                         Product(
                           id: widget.product!.id,
                           name: _namaController.text,
-                          price: double.parse(_priceController.text),
-                          qty: double.parse(_qtyController.text),
+                          price: int.parse(_priceController.text),
+                          qty: int.parse(_qtyController.text),
                           attr: _attrController.text,
-                          weight: double.parse(_weightController.text),
+                          weight: int.parse(_weightController.text),
                         ),
                         widget.product!.id,
                       );

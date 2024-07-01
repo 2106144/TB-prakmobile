@@ -1,10 +1,10 @@
 class Product {
   String id;
   String name;
-  double price;
-  double qty;
+  int price;
+  int qty;
   String attr;
-  double weight;
+  int weight;
   
   
 
