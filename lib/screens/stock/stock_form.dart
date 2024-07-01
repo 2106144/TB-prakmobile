@@ -111,9 +111,9 @@ class _StockFormScreenState extends State<StockFormScreen> {
                       // Tambah stock baru
                       response = await stockApi.createStock(
                         _namaController.text,
-                        int.parse(_qtyController.text),
+                        double.parse(_qtyController.text),
                         _attrController.text,
-                        int.parse(_weightController.text),
+                        double.parse(_weightController.text),
                       );
                     } else {
                       // Update stock yang ada
@@ -121,9 +121,9 @@ class _StockFormScreenState extends State<StockFormScreen> {
                         Stock(
                           id: widget.stock!.id,
                           name: _namaController.text,
-                          qty: int.parse(_qtyController.text),
+                          qty: double.parse(_qtyController.text),
                           attr: _attrController.text,
-                          weight: int.parse(_weightController.text),
+                          weight: double.parse(_weightController.text),
                         ),
                         widget.stock!.id,
                       );

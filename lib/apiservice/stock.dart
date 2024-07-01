@@ -19,9 +19,9 @@ class StockApi {
 
   Future<bool> createStock(
     String name,
-    int qty,
+    double qty,
     String attr,
-    int weight,
+    double weight,
   ) async {
     final response = await http.post(
       Uri.parse('$baseUrl/stocks'),
