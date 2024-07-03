@@ -5,7 +5,7 @@ Nama Aplikasi: Bakery
 Kelompok 2 <br>
 Zihan Melinda (2106103) <br>
 wawan hermawan (2106144) <br>
-sholeh (2106160) <br>
+sholeh (2106142) <br>
 
 
 Fitur fitur yang tersedia:
