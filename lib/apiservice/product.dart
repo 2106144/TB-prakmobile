@@ -20,10 +20,10 @@ class ProductApi {
 
   Future<bool> createProduct(
     String nama,
-    int price,
-    int qty,
+    num price,
+    num qty,
     String attr,
-    int weight,
+    num weight,
   ) async {
     final response = await http.post(
       Uri.parse('$baseUrl/products'),

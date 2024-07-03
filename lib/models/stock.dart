@@ -1,9 +1,9 @@
 class Stock{
   String id;
   String name;
-  int qty;
+  num qty;
   String attr;
-  int weight;
+  num weight;
   
 
 
